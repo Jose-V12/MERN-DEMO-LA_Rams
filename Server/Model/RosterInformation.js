@@ -13,7 +13,7 @@ const playerSchema = new Schema({
         type: String,
         require: true,
     },
-    year_slary:{
+    year_salary:{
         type: String,
         require: true,
     },
