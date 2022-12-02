@@ -1,0 +1,10 @@
+const express = require("express");
+const router = express.Router();
+const Roster = require("../Model/RosterInformation");
+const playerControllers = require("../Controllers/player-Controllers");
+router.get("/get", playerControllers.getAllPlayers);
+router.post("/update", playerControllers.addPlayer);
+router.get("/get/:id", playerControllers.getById);
+router.put("/update/:id", playerControllers.updatePlayer);
+router.delete("/delete/:id", playerControllers.deletePlayer);
+module.exports = router;
